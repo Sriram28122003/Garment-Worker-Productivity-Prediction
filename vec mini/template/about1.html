@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+<style>
+.detailed-view-bg-container {
+  background-image: url("https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/seabg.png");
+  height: 100vh;
+  background-size: cover;
+}
+.detailed-view-heading {
+  color: white;
+  font-family: "Roboto";
+  font-size: 28px;
+  font-weight: bold;
+  padding: 24px;
+}
+.detailed-view-card-container {
+  background-color: white;
+  border-bottom-right-radius: 8px;
+  border-bottom-left-radius: 8px;
+  margin: 24px;
+}
+.detailed-view-card-heading {
+  color: #0f0e46;
+  font-family: "Roboto";
+  font-size: 23px;
+  font-weight: bold;
+}
+.detailed-view-card-description {
+  color: #6c6b70;
+  font-family: "Roboto";
+  font-size: 13px;
+}
+.detailed-view-card-text-container {
+  padding: 16px;
+}
+.image{
+            height:100px;
+            width:100px;
+            border-radius: 15px;
+        }
+        .h1{
+            font-size:16px;
+            font-weight: bold;
+            
+        }
+
+</style>
+  </head>
+  <body>
+<nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top">
+      <div class="container d-flex flex-row">
+        <a class="navbar-brand" href="# ">
+          <img
+            src="https://res.cloudinary.com/dcy90slhx/image/upload/v1718992771/garment17_flgqap.webp"
+            class="image"
+          />
+        </a>
+        <div>
+            <h1 class="h1">Unlocking Productivity Of Garment Workers</h1>
+        </div>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav ml-auto">
+            <a class="nav-link active" id="Home" href="{{ url_for('home') }}">
+              HOME
+              <span class="sr-only">(current)</span>
+            </a>
+            <a class="nav-link" href="{{ url_for('happy1') }}" id="navItem2">ABOUT</a>
+            <a class="nav-link" href="{{ url_for('happy2') }}" id="navItem3">DEPARTMENTS</a>
+            <a class="nav-link" href="" id="navItem4">FAQS</a>
+            <a class="nav-link" href="{{ url_for('happy') }}">MAKE YOUR PREDICTION</a>
+
+          </div>
+        </div>
+      </div>
+    </nav>
+</br>
+
+    <div class="detailed-view-bg-container">
+      <h1 class="detailed-view-heading">About</h1>
+      <div class="detailed-view-card-container">
+                <div class="detailed-view-card-text-container">
+          <h1 class="detailed-view-card-heading">Garment worker productivity</h1>
+          <p class="detailed-view-card-description">
+            Predicting garment worker productivity involves analyzing various factors that influence efficiency and output in a garment manufacturing environment. Here are key considerations and methods used in predicting garment worker productivity:
+
+Factors Influencing Garment Worker Productivity
+Worker Skill Level
+
+Experience and proficiency in specific tasks.
+Training and ongoing skill development.
+Work Environment
+
+Ergonomics of workstations.
+Availability and condition of tools and machinery.
+Lighting, ventilation, and overall working conditions.
+Production Methods
+
+Workflow organization (assembly line vs. modular).
+Use of time and motion studies to optimize processes.
+Incentive Systems
+
+Performance-based pay or bonuses.
+Recognition and reward programs.
+Management Practices
+
+Supervisory support and leadership.
+Clear communication of goals and expectations.
+Efficient scheduling and task assignment.
+Technology and Automation
+
+Implementation of advanced machinery and automation tools.
+Use of software for planning and tracking productivity.
+Quality Control
+
+Strict quality standards to reduce rework.
+Continuous monitoring and feedback mechanisms.
+Workload Balance
+
+Distribution of tasks to prevent bottlenecks.
+Management of worker fatigue and burnout.
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

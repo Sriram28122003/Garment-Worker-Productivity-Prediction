@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Garment Worker productivity prediction</title>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+        <link rel="stylesheet" href="{{ url_for('static', filename='assets/css/predict.css') }}">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+<style>
+      .h{
+         background-image:url("https://res.cloudinary.com/dcy90slhx/image/upload/v1718992828/garment14_asuk6i.jpg");
+height:100vh;
+width:100vw;
+background-size:cover;
+}
+.h1{
+color:red;
+}
+.lay{
+height:35vh;
+width:80vw;
+background-color:#ffffff;
+border-top-left-radius:15px;
+border-top-right-radius:15px;
+border-bottom-left-radius:15px;
+border-bottom-left-radius:15px;
+padding:25px;
+margin:25px;
+}
+.head{
+color:yellow;
+font-size:30px;
+text-align:center;
+}
+.image{
+            height:100px;
+            width:100px;
+            border-radius: 15px;
+        }
+        .h2{
+            font-size:16px;
+            font-weight: bold;
+            
+        }
+
+</style>
+    </head>
+    <body>
+<nav class="navbar navbar-expand-lg navbar-light bg-white ">
+      <div class="container d-flex flex-row">
+        <a class="navbar-brand" href="# ">
+          <img
+            src="https://res.cloudinary.com/dcy90slhx/image/upload/v1718992771/garment17_flgqap.webp"
+            class="image"
+          />
+        </a>
+        <div>
+            <h1 class="h2">Unlocking Productivity Of Garment Workers</h1>
+        </div>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav ml-auto">
+            <a class="nav-link active" id="Home" href="{{ url_for('home') }}" >
+              HOME
+              <span class="sr-only">(current)</span>
+            </a>
+            <a class="nav-link" href="{{ url_for('happy1') }}" id="navItem2">ABOUT</a>
+            <a class="nav-link" href="{{ url_for('happy2') }}" id="navItem3">DEPARTMENTS</a>
+            <a class="nav-link" href="" id="navItem4">FAQS</a>
+            <a class="nav-link" href="{{ url_for('happy') }}">MAKE YOUR PREDICTION</a>
+
+          </div>
+        </div>
+      </div>
+    </nav>
+<div class="h">
+          <h1 class="head" id="name">Garment Worker Productivity Prediction</h1>
+          <div class="lay">
+          <h1 class="h1" id="output">"Hence,based on calculation, the predicted Garment worker is: "
+{{ prediction_text }}</h1>
+        </div>
+</div>          
+     </body>
+</html>

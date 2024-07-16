@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+<style>
+.favourite-places-bg-container {
+  background-image: url("https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/towerbg.png");
+  height: 100vh;
+  wdidth:100vw;
+  background-size: cover;
+  padding: 24px;
+}
+.favourite-places-heading {
+  color: white;
+  font-family: "Roboto";
+  font-size: 28px;
+  font-weight: bold;
+}
+.favourite-place-card-container {
+  background-color: white;
+  border-radius: 8px;
+  padding: 16px;
+  margin-bottom: 15px;
+}
+.favourite-place-card-heading {
+  color: #0f0e46;
+  font-family: "Roboto";
+  font-size: 23px;
+  font-weight: bold;
+}
+.favourite-place-card-description {
+  color: #6c6b70;
+  font-family: "Roboto";
+  font-size: 13px;
+}
+.favourite-place-card-image {
+  width: 80px;
+  height: 100px;
+}
+.favourite-place-card-text-container {
+  margin-right: 15px;
+}
+.image{
+            height:100px;
+            width:100px;
+            border-radius: 15px;
+        }
+        .h1{
+            font-size:16px;
+            font-weight: bold;
+            
+        }
+
+</style>
+  </head>
+  <body>
+<nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top">
+      <div class="container d-flex flex-row">
+        <a class="navbar-brand" href="# ">
+          <img
+            src="https://res.cloudinary.com/dcy90slhx/image/upload/v1718992771/garment17_flgqap.webp"
+            class="image"
+          />
+        </a>
+        <div>
+            <h1 class="h1">Unlocking Productivity Of Garment Workers</h1>
+        </div>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav ml-auto">
+            <a class="nav-link active" id="Home" href="{{ url_for('home') }}" >
+              HOME
+              <span class="sr-only">(current)</span>
+            </a>
+            <a class="nav-link" href="{{ url_for('happy1') }}" id="navItem2">ABOUT</a>
+            <a class="nav-link" href="{{ url_for('happy2') }}" id="navItem3">DEPARTMENTS</a>
+            <a class="nav-link" href="" id="navItem4">FAQS</a>
+            <a class="nav-link" href="{{ url_for('happy') }}">MAKE YOUR PREDICTION</a>
+
+          </div>
+        </div>
+      </div>
+    </nav>
+</br>
+<div class="mt-5">
+<div class="favourite-places-bg-container">
+    
+      <h1 class="favourite-places-heading">Departments</h1>
+      <div class="favourite-place-card-container d-flex flex-row">
+        <div>
+          <h1 class="favourite-place-card-heading">Cutting Department</h1>
+          <p class="favourite-place-card-description">
+            Responsible for cutting fabrics according to the patterns provided by the design department.
+Ensures minimal wastage of fabric and accuracy in cuts.</p>
+        </div>
+        <img src="https://res.cloudinary.com/dcy90slhx/image/upload/v1718991696/garment3_mwx263.jpg" class="favourite-place-card-image" />
+      </div>
+      <div class="favourite-place-card-container d-flex flex-row">
+        <div>
+          <h1 class="favourite-place-card-heading">Design Department</h1>
+          <p class="favourite-place-card-description">
+            Responsible for creating garment designs and ensuring they meet market trends and consumer preferences.
+Provides technical drawings and specifications to guide production.</p>
+        </div>
+        <img src="https://res.cloudinary.com/dcy90slhx/image/upload/v1718992888/garmet0_o3ngo9.jpg" class="favourite-place-card-image" />
+      </div>
+      <div class="favourite-place-card-container d-flex flex-row">
+        <div>
+          <h1 class="favourite-place-card-heading">Sewing Department</h1>
+          <p class="favourite-place-card-description">
+            Assembles the cut pieces into finished garments.
+Ensures stitching quality and efficiency in the sewing process.
+Often divided into lines or cells for specific operations.
+          </p>
+        </div>
+        <img src="https://res.cloudinary.com/dcy90slhx/image/upload/v1718991221/240_F_429303037_KwFA54WSBGD39FlqMkdnauunWNAr9AoJ_mox6mk.jpg" class="favourite-place-card-image" />
+      </div>
+      <div class="favourite-place-card-container d-flex flex-row">
+        <div>
+          <h1 class="favourite-place-card-heading">Finishing Department</h1>
+          <p class="favourite-place-card-description">
+            Handles the final steps of garment production, including trimming, ironing, and packing.
+Ensures that finished garments meet quality standards before shipping
+          </p>
+        </div>
+        <img src="https://res.cloudinary.com/dcy90slhx/image/upload/v1718992741/garment20_adk5oz.webp" class="favourite-place-card-image" />
+      </div>
+</div>
+</div>
+  </body>
+</html>
